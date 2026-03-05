@@ -46,3 +46,48 @@ downloadBtn.addEventListener('click', () => {
     link.download = 'qrquick.png';
     link.click();
 });
+
+shareBtn.addEventListener('click', async () => {
+    const qrCanvas = qrCode.querySelector('canvas');
+    const qrImage = qrCode.querySelector('img');
+
+    let dataUrl;
+
+    if (qrCanvas) {
+        dataUrl = qrCanvas.toDataURL('image/png');
+    } else if (qrImage) {
+        dataUrl = qrImage.src;
+    } else {
+        alert('No QR code to share. Please generate one first.');
+        return;
+    }
+
+    const response = await fetch(dataUrl);
+    const blob = await response.blob();
+    const file = new File([blob], 'qrquick.png', { type: 'image/png' });
+
+    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        try {
+            await navigator.share({
+                files: [file],
+                title: 'QRQuick',
+                text: 'Check out this QR code I generated with QRQuick!',
+            });
+        } catch (error) {
+            console.error('Error sharing:', error);
+        }
+    // Fallback: copy image to clipboard
+    } else if (navigator.clipboard && window.ClipboardItem) {
+        try {
+            await navigator.clipboard.write([
+                new ClipboardItem({ 'image/png': blob })
+            ]);
+            alert('QR code image copied to clipboard!');
+        } catch (error) {
+            console.error('Clipboard error:', error);
+            alert('Could not copy. Try downloading instead.');
+        }
+    } else {
+        alert('Sharing not supported. Please use the Download button.');
+    }
+});
