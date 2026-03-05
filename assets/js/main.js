@@ -3,7 +3,7 @@ const qrInput = document.getElementById('qr-input');
 const qrCode = document.getElementById('qr-code');
 
 generateBtn.addEventListener('click', () => {
-    const text = qrInput.ariaValueMax.trim();
+    const text = qrInput.value.trim();
 
     if (!text) {
         alert('Please enter some text or URL to generate a QR code.');
