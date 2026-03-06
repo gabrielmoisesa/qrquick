@@ -18,8 +18,8 @@ generateBtn.addEventListener('click', () => {
 
     new QRCode(qrCode, {
         text: text,
-        width: 256,
-        height: 256,
+        width: 320,
+        height: 320,
     });
 
     // Show the actions (download/share) after generating the QR code
