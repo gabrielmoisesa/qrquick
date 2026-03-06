@@ -30,6 +30,14 @@ button {
     transition: background-color 0.3s ease;
 }
 
+input {
+    padding: 10px;
+    font-size: 0.85rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+}
+
 button:hover {
     background-color: #0197d3;
 }
