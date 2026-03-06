@@ -5,6 +5,12 @@ const qrActions = document.getElementById('qr-actions');
 const downloadBtn = document.getElementById('download-btn');
 const shareBtn = document.getElementById('share-btn');
 
+qrInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        generateBtn.click();
+    }
+});
+
 generateBtn.addEventListener('click', () => {
     const text = qrInput.value.trim();
 
