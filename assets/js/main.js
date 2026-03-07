@@ -27,9 +27,6 @@ generateBtn.addEventListener('click', () => {
         width: 320,
         height: 320,
     });
-
-    // Show the actions (download/share) after generating the QR code
-    qrActions.style.display = 'block';
 });
 
 downloadBtn.addEventListener('click', () => {
