@@ -67,6 +67,11 @@ header h1 {
     min-height: 50vh;
 }
 
+#qr-actions > button {
+    width: 130px;
+    margin: 5px;
+}
+
 footer {
     margin-top: auto;
     padding: 16px;
