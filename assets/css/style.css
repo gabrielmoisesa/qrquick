@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
     background-color: #fcfcfc;
-    font-family: 'Segoe UI', sans-serif;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ header {
 
 button {
     padding: 10px 20px;
-    font-size: 0.85rem;
+    font-size: 0.87rem;
     background-color: #00A8E8;
     color: white;
     border: none;
