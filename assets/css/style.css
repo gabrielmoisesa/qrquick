@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding-bottom: 10px;
 }
 
 header {
@@ -74,7 +75,18 @@ header h1 {
 
 footer {
     margin-top: auto;
-    padding: 16px;
     font-size: 0.9rem;
     color: #777;
+}
+
+@media (max-width: 600px) {    
+    header {
+    margin-top: 5vh;
+    }
+
+    #qr-input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
