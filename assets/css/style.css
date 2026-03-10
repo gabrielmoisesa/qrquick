@@ -2,6 +2,7 @@
 :root {
     --bg-color: #fcfcfc;
     --text-color: black;
+    --link-color: #027fb1;
     --input-border: #ccc;
     --blue-color: #00A8E8;
     --button-text-color: white;
@@ -63,6 +64,11 @@ input {
     width: 300px;
 }
 
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
 button:hover {
     background-color: var(--button-hover-bg);
 }
@@ -110,6 +116,12 @@ footer {
     margin-top: auto;
     font-size: 0.9rem;
     color: var(--footer-color);
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @media (max-width: 600px) {    
