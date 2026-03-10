@@ -4,6 +4,27 @@ const qrCode = document.getElementById('qr-code');
 const qrActions = document.getElementById('qr-actions');
 const downloadBtn = document.getElementById('download-btn');
 const shareBtn = document.getElementById('share-btn');
+const themeToggle = document.getElementById('theme-toggle');
+
+const savedTheme = localStorage.getItem('theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    document.body.classList.add('dark');
+    themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i> Light Mode';
+} else {
+    themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i> Dark Mode';
+}
+
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    themeToggle.innerHTML = isDark
+        ? '<i class="fa-solid fa-sun"></i> Light Mode'
+        : '<i class="fa-solid fa-moon"></i> Dark Mode';
+});
 
 qrInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {

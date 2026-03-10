@@ -27,19 +27,6 @@ body.dark {
     --footer-color: #aaa;
 }
 
-/* Automatically switch to dark theme based on user preference */
-@media (prefers-color-scheme: dark) {
-    body {
-        --bg-color: #131313;
-        --text-color: #fcfcfc;
-        --input-border: #555;
-        --blue-color: #00A8E8;
-        --button-text-color: white;
-        --button-hover-bg: #0197d3;
-        --footer-color: #aaa;
-    }
-}
-
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
