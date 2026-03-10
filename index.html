@@ -1,53 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QRQuick</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/qr-code-icon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/qr-code-icon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <h1>QR<span id="blue-word">Quick</span></h1>
+      <h1>QR<span id="blue-word">Quick</span></h1>
     </header>
     <main>
-        <section class="qr-form">
-            <label for="qr-input">Enter text to generate QR code:</label>
-            <div id="qr-input-group">
-                <input type="text" id="qr-input" placeholder="Enter text here">
-                <button id="generate-btn">Generate QR Code</button>
-            </div>
-        </section>
-        <section class="qr-output">
-            <div id="qr-code">
-                <img id="default-qrcode" src="assets/img/qrquick-repo.png" alt="Default QR Code with QRQuick repository link">
-            </div>
-            <div id="qr-actions">
-                <button id="download-btn">
-                    Download
-                    <i class="fas fa-download"></i>
-                </button>
-                <button id="share-btn">
-                    Share
-                    <i class="fas fa-share-alt"></i>
-                </button>
-            </div>
-        </section>
+      <section class="qr-form">
+        <label for="qr-input">Enter text to generate QR code:</label>
+        <div id="qr-input-group">
+          <input type="text" id="qr-input" placeholder="Enter text here" />
+          <button id="generate-btn">Generate QR Code</button>
+        </div>
+      </section>
+      <section class="qr-output">
+        <div id="qr-code">
+          <img
+            id="default-qrcode"
+            src="assets/img/qrquick-repo.png"
+            alt="Default QR Code with QRQuick repository link"
+          />
+        </div>
+        <div id="qr-actions">
+          <button id="download-btn">
+            Download
+            <i class="fas fa-download"></i>
+          </button>
+          <button id="share-btn">
+            Share
+            <i class="fas fa-share-alt"></i>
+          </button>
+        </div>
+      </section>
     </main>
     <footer>
-        <button id="theme-toggle">
-            <i class="fa-solid fa-sun"></i> Light Mode
-        </button>
-        <div class="footer-info">
-            <p>&copy; 2026 QRQuick. All rights reserved.</p>
-            <a href="https://github.com/gabrielmoisesa/qrquick" target="_blank">
-             <i class="fab fa-github"></i> GitHub
-            </a>
-        </div>
+      <button id="theme-toggle">
+        <i class="fa-solid fa-sun"></i> Light Mode
+      </button>
+      <div class="footer-info">
+        <p>&copy; 2026 QRQuick. All rights reserved.</p>
+        <a href="https://github.com/gabrielmoisesa/qrquick" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </footer>
     <script src="libs/qrcode.min.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>

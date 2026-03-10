@@ -1,137 +1,137 @@
 /* Default light theme variables */
 :root {
-    --bg-color: #fcfcfc;
-    --text-color: black;
-    --link-color: #027fb1;
-    --input-border: #ccc;
-    --blue-color: #00A8E8;
-    --button-text-color: white;
-    --button-hover-bg: #0197d3;
-    --footer-color: #777;
+  --bg-color: #fcfcfc;
+  --text-color: black;
+  --link-color: #027fb1;
+  --input-border: #ccc;
+  --blue-color: #00a8e8;
+  --button-text-color: white;
+  --button-hover-bg: #0197d3;
+  --footer-color: #777;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* Dark theme variables */
 body.dark {
-    --bg-color: #131313;
-    --text-color: #fcfcfc;
-    --input-border: #555;
-    --blue-color: #00A8E8;
-    --button-text-color: white;
-    --button-hover-bg: #0197d3;
-    --footer-color: #aaa;
+  --bg-color: #131313;
+  --text-color: #fcfcfc;
+  --input-border: #555;
+  --blue-color: #00a8e8;
+  --button-text-color: white;
+  --button-hover-bg: #0197d3;
+  --footer-color: #aaa;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding-bottom: 10px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 10px;
 }
 
 header {
-    margin-top: 15vh;
-    margin-bottom: 10px;
+  margin-top: 15vh;
+  margin-bottom: 10px;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 0.87rem;
-    background-color: var(--blue-color);
-    color: var(--button-text-color);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  font-size: 0.87rem;
+  background-color: var(--blue-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 input {
-    padding: 10px;
-    font-size: 0.85rem;
-    border: 1px solid var(--input-border);
-    border-radius: 8px;
-    width: 300px;
+  padding: 10px;
+  font-size: 0.85rem;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  width: 300px;
 }
 
 a {
-    color: var(--link-color);
-    text-decoration: none;
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 button:hover {
-    background-color: var(--button-hover-bg);
+  background-color: var(--button-hover-bg);
 }
 
 header h1 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 #blue-word {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 
 .qr-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .qr-output {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    min-height: 50vh;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-height: 50vh;
 }
 
 #qr-code {
-    background-color: white;
-    padding: 16px;
-    border-radius: 8px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 #qr-actions > button {
-    width: 130px;
-    margin: 5px;
+  width: 130px;
+  margin: 5px;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: auto;
-    font-size: 0.9rem;
-    color: var(--footer-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: var(--footer-color);
 }
 
 .footer-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-@media (max-width: 600px) {    
-    header {
+@media (max-width: 600px) {
+  header {
     margin-top: 5vh;
-    }
+  }
 
-    #qr-input-group {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+  #qr-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
