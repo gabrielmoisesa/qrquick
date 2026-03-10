@@ -1,6 +1,7 @@
 /* Default light theme variables */
 :root {
   --bg-color: #fcfcfc;
+  --theme-toggle-color: var(--blue-color);
   --text-color: black;
   --link-color: #027fb1;
   --input-border: #ccc;
@@ -20,6 +21,7 @@
 /* Dark theme variables */
 body.dark {
   --bg-color: #131313;
+  --theme-toggle-color: #fcfcfc;
   --text-color: #fcfcfc;
   --input-border: #555;
   --blue-color: #00a8e8;
@@ -47,7 +49,7 @@ header {
 
 button {
   padding: 10px 20px;
-  font-size: 0.87rem;
+  font-size: 0.9rem;
   background-color: var(--blue-color);
   color: var(--button-text-color);
   border: none;
@@ -75,6 +77,16 @@ button:hover {
 
 header h1 {
   font-size: 2.5em;
+}
+
+#theme-toggle {
+  position: absolute;
+  color: var(--theme-toggle-color);
+  background-color: transparent;
+  font-size: 1rem;
+  top: 10px;
+  right: 5px;
+  z-index: 1000;
 }
 
 #blue-word {

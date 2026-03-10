@@ -11,9 +11,9 @@ const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
   document.body.classList.add('dark');
-  themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i> Light Mode';
+  themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
 } else {
-  themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i> Dark Mode';
+  themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
 }
 
 themeToggle.addEventListener('click', () => {
@@ -22,8 +22,8 @@ themeToggle.addEventListener('click', () => {
 
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
   themeToggle.innerHTML = isDark
-    ? '<i class="fa-solid fa-sun"></i> Light Mode'
-    : '<i class="fa-solid fa-moon"></i> Dark Mode';
+    ? '<i class="fa-solid fa-sun"></i>'
+    : '<i class="fa-solid fa-moon"></i>';
 });
 
 qrInput.addEventListener('keydown', (e) => {
