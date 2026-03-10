@@ -91,6 +91,12 @@ header h1 {
     min-height: 50vh;
 }
 
+#qr-code {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+
 #qr-actions > button {
     width: 130px;
     margin: 5px;
