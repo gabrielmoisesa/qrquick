@@ -147,3 +147,41 @@ footer {
     gap: 10px;
   }
 }
+
+@media (min-width: 1200px) and (min-height: 600px) {
+  #theme-toggle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 2000px) and (min-height: 700px) {
+  body {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  input {
+    font-size: 1.5rem;
+    width: 400px;
+  }
+
+  footer {
+    font-size: 1.75rem;
+  }
+
+  #theme-toggle {
+    font-size: 3rem;
+  }
+
+  #qr-code > img {
+    width: 600px;
+    height: 600px;
+  }
+}
