@@ -1,3 +1,4 @@
+// Document elements
 const generateBtn = document.getElementById('generate-btn');
 const qrInput = document.getElementById('qr-input');
 const qrCode = document.getElementById('qr-code');
@@ -6,9 +7,24 @@ const downloadBtn = document.getElementById('download-btn');
 const shareBtn = document.getElementById('share-btn');
 const themeToggle = document.getElementById('theme-toggle');
 
+// Detect language - falls back to 'en' if unsupported
+const userLang = navigator.language.slice(0, 2); // e.g. 'pt', 'en', 'es'
+const lang = translations[userLang] ? userLang : 'en';
+const t = translations[lang];
+
+document.querySelectorAll('[data-i18n]').forEach((el) => {
+  el.textContent = t[el.dataset.i18n];
+});
+
+document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+  el.placeholder = t[el.dataset.i18nPlaceholder];
+});
+
+// Load saved theme or system preference
 const savedTheme = localStorage.getItem('theme');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+// Apply theme on page load
 if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
   document.body.classList.add('dark');
   themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
@@ -36,7 +52,7 @@ generateBtn.addEventListener('click', () => {
   const text = qrInput.value.trim();
 
   if (!text) {
-    alert('Please enter some text or URL to generate a QR code.');
+    alert(t.alertEmpty);
     return;
   }
 
@@ -61,7 +77,7 @@ downloadBtn.addEventListener('click', () => {
   } else if (qrImage) {
     dataUrl = qrImage.src;
   } else {
-    alert('No QR code to download. Please generate one first.');
+    alert(t.alertNoDownload);
     return;
   }
 
@@ -82,7 +98,7 @@ shareBtn.addEventListener('click', async () => {
   } else if (qrImage) {
     dataUrl = qrImage.src;
   } else {
-    alert('No QR code to share. Please generate one first.');
+    alert(t.alertNoShare);
     return;
   }
 
@@ -106,12 +122,12 @@ shareBtn.addEventListener('click', async () => {
       await navigator.clipboard.write([
         new ClipboardItem({ 'image/png': blob }),
       ]);
-      alert('QR code image copied to clipboard!');
+      alert(t.alertCopied);
     } catch (error) {
       console.error('Clipboard error:', error);
-      alert('Could not copy. Try downloading instead.');
+      alert(t.alertCopyFail);
     }
   } else {
-    alert('Sharing not supported. Please use the Download button.');
+    alert(t.alertShareFail);
   }
 });
