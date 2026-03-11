@@ -69,4 +69,20 @@ const translations = {
     alertCopyFail: 'कॉपी नहीं हो सका। डाउनलोड करने का प्रयास करें।',
     alertShareFail: 'शेयर करना समर्थित नहीं है। डाउनलोड बटन का उपयोग करें।',
   },
+  ja: {
+    label: 'QRコードを生成するテキストを入力してください：',
+    placeholder: 'ここにテキストを入力',
+    generateBtn: 'QRコードを生成',
+    downloadBtn: 'ダウンロード',
+    shareBtn: 'シェア',
+    footer: '© 2026 QRQuick. 全著作権所有。',
+    alertEmpty: 'QRコードを生成するには、テキストまたはURLを入力してください。',
+    alertNoDownload:
+      'ダウンロードするQRコードがありません。先に生成してください。',
+    alertNoShare: 'シェアするQRコードがありません。先に生成してください。',
+    alertCopied: 'QRコードの画像をクリップボードにコピーしました！',
+    alertCopyFail: 'コピーできませんでした。ダウンロードをお試しください。',
+    alertShareFail:
+      'シェア機能はサポートされていません。ダウンロードボタンをご利用ください。',
+  },
 };
