@@ -13,6 +13,8 @@ const userLang = navigator.language.slice(0, 2); // e.g. 'pt', 'en', 'es'
 const lang = translations[userLang] ? userLang : 'en';
 const t = translations[lang];
 
+document.documentElement.lang = lang;
+
 document.querySelectorAll('[data-i18n]').forEach((el) => {
   el.textContent = t[el.dataset.i18n];
 });
