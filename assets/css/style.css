@@ -145,6 +145,11 @@ footer {
     margin-top: 5vh;
   }
 
+  .qr-form > label {
+    max-width: 80%;
+    text-align: center;
+  }
+
   #qr-input-group {
     display: flex;
     flex-direction: column;
