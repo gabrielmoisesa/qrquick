@@ -115,8 +115,12 @@ header h1 {
   border-radius: 8px;
 }
 
+#qr-actions {
+  display: flex;
+}
+
 #qr-actions > button {
-  width: 130px;
+  width: 140px;
   margin: 5px;
 }
 
