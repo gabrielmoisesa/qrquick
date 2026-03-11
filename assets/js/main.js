@@ -9,6 +9,7 @@ const themeToggle = document.getElementById('theme-toggle');
 
 // Detect language - falls back to 'en' if unsupported
 const userLang = navigator.language.slice(0, 2); // e.g. 'pt', 'en', 'es'
+// const userLang = 'pt'; // For testing translation
 const lang = translations[userLang] ? userLang : 'en';
 const t = translations[lang];
 
