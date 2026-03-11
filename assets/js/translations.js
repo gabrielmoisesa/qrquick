@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    label: 'Enter text to generate QR code:',
-    placeholder: 'Enter text here',
+    label: 'Enter a URL or text to generate QR code:',
+    placeholder: 'https://example.com or any text',
     generateBtn: 'Generate QR Code',
     downloadBtn: 'Download',
     shareBtn: 'Share',
@@ -14,8 +14,8 @@ const translations = {
     alertShareFail: 'Sharing not supported. Please use the Download button.',
   },
   pt: {
-    label: 'Digite um texto para gerar o QR code:',
-    placeholder: 'Digite o texto aqui',
+    label: 'Digite uma URL ou texto para gerar o QR code:',
+    placeholder: 'https://example.com ou qualquer texto',
     generateBtn: 'Gerar QR Code',
     downloadBtn: 'Baixar',
     shareBtn: 'Compartilhar',
@@ -28,8 +28,8 @@ const translations = {
     alertShareFail: 'Compartilhamento não suportado. Use o botão de download.',
   },
   es: {
-    label: 'Ingresa texto para generar el código QR:',
-    placeholder: 'Ingresa el texto aquí',
+    label: 'Ingresa una URL o texto para generar el código QR:',
+    placeholder: 'https://example.com o cualquier texto',
     generateBtn: 'Generar QR',
     downloadBtn: 'Descargar',
     shareBtn: 'Compartir',
@@ -42,8 +42,8 @@ const translations = {
     alertShareFail: 'Compartir no está soportado. Usa el botón de descarga.',
   },
   zh: {
-    label: '输入文字以生成二维码：',
-    placeholder: '在此输入文字',
+    label: '输入网址或文字以生成二维码：',
+    placeholder: 'https://example.com 或任意文字',
     generateBtn: '生成二维码',
     downloadBtn: '下载',
     shareBtn: '分享',
@@ -56,8 +56,8 @@ const translations = {
     alertShareFail: '不支持分享功能，请使用下载按钮。',
   },
   hi: {
-    label: 'QR कोड बनाने के लिए टेक्स्ट दर्ज करें:',
-    placeholder: 'यहाँ टेक्स्ट दर्ज करें',
+    label: 'QR कोड बनाने के लिए URL या टेक्स्ट दर्ज करें:',
+    placeholder: 'https://example.com या कोई भी टेक्स्ट',
     generateBtn: 'QR कोड बनाएं',
     downloadBtn: 'डाउनलोड',
     shareBtn: 'शेयर करें',
@@ -70,8 +70,8 @@ const translations = {
     alertShareFail: 'शेयर करना समर्थित नहीं है। डाउनलोड बटन का उपयोग करें।',
   },
   ja: {
-    label: 'QRコードを生成するテキストを入力してください：',
-    placeholder: 'ここにテキストを入力',
+    label: 'QRコードを生成するにはURLまたはテキストを入力：',
+    placeholder: 'https://example.com またはテキスト',
     generateBtn: 'QRコードを生成',
     downloadBtn: 'ダウンロード',
     shareBtn: 'シェア',
