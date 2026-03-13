@@ -1,4 +1,4 @@
-# QRQuick <img src="./assets//img/qr-code-icon.png" alt="qr-code-icon" width="22" allign="center">
+# QRQuick <img src="./assets//img/qr-code-icon.png" alt="qr-code-icon" width="22" align="center">
 
 QRQuick is a fast, lightweight web app for generating QR codes from URLs and text.
 
@@ -40,7 +40,7 @@ QRQuick is a simple and lightweight web app that lets you instantly generate QR 
 - HTML
 - CSS
 - JavaScript
-- [QRCode.js](www.npmjs.com/package/qrcodejs)
+- [QRCode.js](https://www.npmjs.com/package/qrcodejs)
 
 ## Getting Started
 
