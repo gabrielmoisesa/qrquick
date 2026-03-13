@@ -17,8 +17,11 @@ QRQuick is a fast, lightweight web app for generating QR codes from URLs and tex
 
 ## About The Project
 
-<img src="./assets/img/qrquick-mobile-preview.webp" alt="qrquick-mobile-preview" width="200">
-<img src="./assets/img/qrquick-laptop-preview.webp" alt="qrquick-laptop-preview" width="700">
+<div>
+  <img src="./assets/img/qrquick-mobile-preview.webp" alt="qrquick-mobile-preview" width="150">
+  &nbsp;&nbsp;&nbsp;
+  <img src="./assets/img/qrquick-laptop-preview.webp" alt="qrquick-laptop-preview" width="500">
+</div>
 
 <br>
 QRQuick is a simple and lightweight web app that lets you instantly generate QR codes from any URL or text. Just type or paste your content, hit generate, and download or share your QR code — no sign-up, no ads, no friction.
