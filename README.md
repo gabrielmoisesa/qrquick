@@ -63,3 +63,7 @@ No dependencies or package manager required. Just a modern web browser.
 ## Acknowledgments
 
 - <a href="https://www.flaticon.com/free-icons/qr-code" title="qr code icons">Qr code icons created by HideMaru - Flaticon</a>
+
+## License
+
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
