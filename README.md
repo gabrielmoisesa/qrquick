@@ -1,5 +1,9 @@
 # QRQuick <img src="./assets//img/qr-code-icon.png" alt="qr-code-icon" width="22" align="center">
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-blue?style=flat-square)](https://gabrielmoisesa.github.io/qrquick/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+[![Mobile Friendly](https://img.shields.io/badge/Mobile-Friendly-blueviolet?style=flat-square)](#features)
+
 QRQuick is a fast, lightweight web app for generating QR codes from URLs and text.
 
 <details>
