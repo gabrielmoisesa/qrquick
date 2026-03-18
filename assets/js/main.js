@@ -94,7 +94,7 @@ downloadBtn.addEventListener('click', () => {
   if (qrCanvas) {
     dataUrl = getQRCanvasWithPadding(qrCanvas).toDataURL('image/png');
   } else if (qrImage) {
-    dataUrl = qrImage.src;
+    dataUrl = getQRCanvasWithPadding(qrImage).toDataURL('image/png');
   } else {
     alert(t.alertNoDownload);
     return;
@@ -115,7 +115,7 @@ shareBtn.addEventListener('click', async () => {
   if (qrCanvas) {
     dataUrl = getQRCanvasWithPadding(qrCanvas).toDataURL('image/png');
   } else if (qrImage) {
-    dataUrl = qrImage.src;
+    dataUrl = getQRCanvasWithPadding(qrImage).toDataURL('image/png');
   } else {
     alert(t.alertNoShare);
     return;
