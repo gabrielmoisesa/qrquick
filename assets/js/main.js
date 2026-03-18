@@ -113,7 +113,7 @@ shareBtn.addEventListener('click', async () => {
   let dataUrl;
 
   if (qrCanvas) {
-    dataUrl = qrCanvas.toDataURL('image/png');
+    dataUrl = getQRCanvasWithPadding(qrCanvas).toDataURL('image/png');
   } else if (qrImage) {
     dataUrl = qrImage.src;
   } else {
