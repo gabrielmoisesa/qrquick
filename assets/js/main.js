@@ -69,6 +69,22 @@ generateBtn.addEventListener('click', () => {
   });
 });
 
+function getQRCanvasWithPadding(sourceCanvas) {
+  const padding = 20;
+  const size = sourceCanvas.width + padding * 2;
+
+  const paddedCanvas = document.createElement('canvas');
+  paddedCanvas.width = size;
+  paddedCanvas.height = size;
+
+  const ctx = paddedCanvas.getContext('2d');
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, size, size);
+  ctx.drawImage(sourceCanvas, padding, padding);
+
+  return paddedCanvas;
+}
+
 downloadBtn.addEventListener('click', () => {
   const qrCanvas = qrCode.querySelector('canvas');
   const qrImage = qrCode.querySelector('img');
@@ -76,7 +92,7 @@ downloadBtn.addEventListener('click', () => {
   let dataUrl;
 
   if (qrCanvas) {
-    dataUrl = qrCanvas.toDataURL('image/png');
+    dataUrl = getQRCanvasWithPadding(qrCanvas).toDataURL('image/png');
   } else if (qrImage) {
     dataUrl = qrImage.src;
   } else {
