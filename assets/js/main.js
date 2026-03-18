@@ -71,16 +71,19 @@ generateBtn.addEventListener('click', () => {
 
 function getQRCanvasWithPadding(sourceCanvas) {
   const padding = 20;
-  const size = sourceCanvas.width + padding * 2;
+
+  const originalWidth = sourceCanvas.naturalWidth || sourceCanvas.width;
+  const originalHeight = sourceCanvas.naturalHeight || sourceCanvas.height;
 
   const paddedCanvas = document.createElement('canvas');
-  paddedCanvas.width = size;
-  paddedCanvas.height = size;
+  paddedCanvas.width = originalWidth + padding * 2;
+  paddedCanvas.height = originalHeight + padding * 2;
 
   const ctx = paddedCanvas.getContext('2d');
   ctx.fillStyle = '#ffffff';
-  ctx.fillRect(0, 0, size, size);
-  ctx.drawImage(sourceCanvas, padding, padding);
+  ctx.fillRect(0, 0, paddedCanvas.width, paddedCanvas.height);
+
+  ctx.drawImage(sourceCanvas, padding, padding, originalWidth, originalHeight);
 
   return paddedCanvas;
 }
